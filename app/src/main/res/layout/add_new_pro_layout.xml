@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="4dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtName"
+            android:hint="Nom"
+            android:text="Nom"
+            android:textSize="24sp"
+            app:met_baseColor="@color/shadColor"
+            app:met_primaryColor="@color/shadColor"
+            android:textColorHint="@color/shadColor"
+            android:fontFamily="cursive"
+
+            app:met_floatingLabel="highlight"
+
+            app:met_singleLineEllipsis="true"></com.rengwuxian.materialedittext.MaterialEditText>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtDescription"
+            android:hint="Description"
+            android:text="Description"
+            android:textSize="24sp"
+            android:inputType="textMultiLine"
+            app:met_baseColor="@color/shadColor"
+            app:met_primaryColor="@color/shadColor"
+            android:textColorHint="@color/shadColor"
+            android:fontFamily="cursive"
+
+            app:met_floatingLabel="highlight"
+
+            app:met_singleLineEllipsis="true"></com.rengwuxian.materialedittext.MaterialEditText>
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtPrice"
+            android:hint="Price"
+            android:text="Prix"
+            android:textSize="24sp"
+            android:inputType="number"
+            app:met_baseColor="@color/shadColor"
+            app:met_primaryColor="@color/shadColor"
+            android:textColorHint="@color/shadColor"
+            android:fontFamily="cursive"
+
+            app:met_floatingLabel="highlight"
+
+            app:met_singleLineEllipsis="true"></com.rengwuxian.materialedittext.MaterialEditText>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnSelect"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentBottom="true"
+                app:shadowColor="@color/shadColor"
+                app:shadowEnabled="true"
+                app:shadowHeight="6dp"
+                app:cornerRadius="20dp"
+                app:fButtonColor="@color/finalColor"
+                android:textColor="@color/shadColor"
+
+                android:fontFamily="cursive"
+                android:text="Selectionner"
+
+                ></info.hoang8f.widget.FButton>
+            <info.hoang8f.widget.FButton
+                android:id="@+id/btnUpload"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentBottom="true"
+                app:shadowColor="@color/finalColor"
+                app:shadowEnabled="true"
+                app:shadowHeight="6dp"
+                app:cornerRadius="20dp"
+                app:fButtonColor="@color/shadColor"
+                android:textColor="@color/finalColor"
+
+                android:fontFamily="cursive"
+                android:text="Importer"
+
+                ></info.hoang8f.widget.FButton>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

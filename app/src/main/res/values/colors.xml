@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#FEDBD0</color>-->
+    <color name="colorPrimary">#FFD381</color>
+    <color name="colorPrimaryDark">#FFD381</color>
+    <color name="colorAccent">#FFD381</color>
+    <color name="overlayBackground">#7f333639</color>
+    <color name="overlayActionBar">#FFD381</color>
+    <color name="colorSecondary">#FFD381</color>
+    <color name="finalColor">#FFD381</color>
+    <color name="shadColor">#491312</color>
+
+
+</resources>

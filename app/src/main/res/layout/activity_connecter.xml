@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Connecter"
+    >
+    <ImageView
+        android:layout_width="289dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/log" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/petTel"
+            android:hint="Numéro de télephone"
+            android:text="0682658172"
+            app:met_baseColor="@color/shadColor"
+            app:met_primaryColor="@color/shadColor"
+            android:textColorHint="@color/shadColor"
+            android:fontFamily="cursive"
+            android:textSize="24sp"
+            android:inputType="phone"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_singleLineEllipsis="true"></com.rengwuxian.materialedittext.MaterialEditText>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/petMdp"
+            android:hint="Mot de passe"
+            android:text="1234"
+            android:textSize="24sp"
+            app:met_baseColor="@color/shadColor"
+            app:met_primaryColor="@color/shadColor"
+            android:textColorHint="@color/shadColor"
+            android:fontFamily="cursive"
+            android:inputType="textPassword"
+            app:met_floatingLabel="highlight"
+            app:met_maxCharacters="11"
+            app:met_singleLineEllipsis="true"></com.rengwuxian.materialedittext.MaterialEditText>
+        <!-- <CheckBox
+            android:id="@+id/ckbRemember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+
+            android:text="Mémoriser le mot de passe"
+            android:textColor="@color/shadColor"
+
+
+            ></CheckBox> -->
+    </LinearLayout>
+
+    <info.hoang8f.widget.FButton
+        android:id="@+id/btnConnecter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentBottom="true"
+        app:shadowColor="@color/shadColor"
+        app:shadowEnabled="true"
+        app:shadowHeight="6dp"
+        app:cornerRadius="20dp"
+        app:fButtonColor="@color/finalColor"
+        android:textColor="@color/shadColor"
+
+        android:fontFamily="cursive"
+        android:text="Se connecter"
+
+        ></info.hoang8f.widget.FButton>
+</RelativeLayout>
